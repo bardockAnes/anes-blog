@@ -2,122 +2,6 @@
   min-height: 100vh;
   background-color: #f8f9fa;
   direction: rtl;
-  font-family: 'Arial', sans-serif;
-}
-
-.header {
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  position: fixed;
-  width: 100%;
-  z-index: 1000;
-  padding: 1rem;
-}
-
-.headerContent {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.desktopNav {
-  display: none;
-}
-
-.navButton, .subscribeButton {
-  background: none;
-  border: none;
-  color: #333;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-}
-
-.subscribeButton {
-  background: linear-gradient(45deg, #20B2AA, #48D1CC);
-  color: white;
-  border-radius: 4px;
-}
-
-.mobileMenuButton {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menuIcon {
-  width: 24px;
-  height: 24px;
-}
-
-.srOnly {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-.mobileMenu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: white;
-  z-index: 1001;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.closeButton {
-  align-self: flex-end;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.closeIcon {
-  width: 24px;
-  height: 24px;
-}
-
-.mobileNav {
-  margin-top: 2rem;
-  width: 100%;
-}
-
-.mobileNavButton, .mobileSubscribeButton {
-  display: block;
-  width: 100%;
-  text-align: right;
-  padding: 1rem 0;
-  font-size: 1.2rem;
-  background: none;
-  border: none;
-  color: #333;
-  cursor: pointer;
-}
-
-.mobileSubscribeButton {
-  background: linear-gradient(45deg, #20B2AA, #48D1CC);
-  color: white;
-  border-radius: 4px;
-  margin-top: 1rem;
 }
 
 .main {
@@ -126,40 +10,6 @@
   margin: 0 auto;
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 4rem;
-}
-
-.heroTitle {
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 1rem;
-}
-
-.heroSubtitle {
-  font-size: 1.2rem;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.ctaButton {
-  background: linear-gradient(45deg, #20B2AA, #48D1CC);
-  color: white;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-}
-
-.arrowIcon {
-  margin-right: 0.5rem;
-  width: 20px;
-  height: 20px;
-}
 
 .posts {
   display: grid;
@@ -303,14 +153,6 @@
 }
 
 @media (min-width: 768px) {
-  .desktopNav {
-    display: flex;
-    gap: 1rem;
-  }
-
-  .mobileMenuButton {
-    display: none;
-  }
 
   .posts {
     grid-template-columns: repeat(2, 1fr); /* Two columns for tablets and up */
