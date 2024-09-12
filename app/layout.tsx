@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body className={cairo.className}>{children}</body>
+      <body className={noto.className}>{children}</body>
     </html>
   )
 }

@@ -36,8 +36,8 @@ const NavBar: React.FC<NavBarProps> = ({
                 <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center">
 
-                        <div className="flex items-center gap-x-4" >
-                            <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text p-1">
+                        <div className="flex items-center gap-x-5" style={{justifyContent:'center'}}>
+                            <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-600 text-transparent bg-clip-text" style={{paddingBottom:'4px',}}>
                                 {t('مدونتي ', 'My Blog')}
                             </h1>
                             <nav className="hidden md:flex gap-x-4" >
@@ -51,7 +51,7 @@ const NavBar: React.FC<NavBarProps> = ({
                         <div className="flex items-center gap-x-4">
                             <div className="relative" >
                                 <Input type="search" placeholder={t('بحث...', 'Search...')} className={`w-64 ${language === 'ar' ? 'pl-8' : 'pr-8'} hidden md:block`} />
-                                <SearchIcon className={`absolute ${language === 'ar' ? 'left-2' : 'right-2'} top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400`} />
+                                <SearchIcon className={`absolute ${language === 'ar' ? 'left-2' : 'right-2'} top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400 hidden md:block`} />
                             </div>
                             <TooltipProvider>
                                 <Tooltip>
@@ -123,7 +123,7 @@ const NavBar: React.FC<NavBarProps> = ({
                 </div>
             )}
 
-            <nav className={`${isDarkMode ? 'bg-gray-900' : 'bg-white'} border-b ${isDarkMode ? 'border-gray-800' : 'border-gray-200'}`} >
+            <nav className={`${isDarkMode ? 'bg-gray-900' : 'bg-white'} border-b ${isDarkMode ? 'border-gray-800' : 'border-gray-200'} hidden md:block`} >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" >
                     <Tabs defaultValue="all" className="w-full" style={{ direction: language === 'ar' ? 'rtl' : 'ltr' }}>
                         <TabsList>
