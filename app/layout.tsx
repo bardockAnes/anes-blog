@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Cairo,Noto_Kufi_Arabic } from 'next/font/google'
 import '@/styles/globals.css'
+import '@/styles/output.css'
 
 const noto = Noto_Kufi_Arabic({ subsets: ['arabic'] })
 const cairo = Cairo({ subsets: ['arabic'] })
@@ -16,8 +17,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="ar" dir="rtl">
-      <body className={noto.className}>{children}</body>
+    <html>
+      <body className={cairo.className}>{children}</body>
     </html>
   )
 }
