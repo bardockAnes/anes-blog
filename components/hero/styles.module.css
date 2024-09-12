@@ -1,0 +1,35 @@
+.hero {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .ctaButton {
+    background: linear-gradient(45deg, #20b2aa, #48d1cc);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem; /* Adds space between text and arrow */
+  }
+  
+  .arrowIcon {
+    width: 20px;
+    height: 20px;
+  }
+  
